@@ -1,0 +1,34 @@
+#!perl
+
+# DATE
+# VERSION
+
+use 5.010001;
+use strict;
+use warnings;
+
+use Perinci::CmdLine::Any;
+
+Perinci::CmdLine::Any->new(
+    url => '/App/orgsel/orgsel',
+    read_config => 0,
+    read_env => 0,
+)->run;
+
+# ABSTRACT:
+# PODNAME:
+
+=head1 SYNOPSIS
+
+ % orgsel ~/o/todo.org "Headline[level=2]:first-child"
+
+
+=head1 SEE ALSO
+
+L<Org::Parser>
+
+L<Data::CSel>, L<CSel::Examples>
+
+L<App::OrgUtils> for other Org-related utilities.
+
+L<htmlsel>, L<jsonsel>, L<yamlsel>, L<ddsel>, L<podsel>, L<ppisel>
